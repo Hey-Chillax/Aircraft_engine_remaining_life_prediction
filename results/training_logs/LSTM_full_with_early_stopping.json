@@ -1,0 +1,22 @@
+{
+    "model": "LSTM",
+    "data_version": "full",
+    "early_stopping": "yes",
+    "sequence_length": 50,
+    "batch_size": 64,
+    "epochs": 300,
+    "best_epoch": 4,
+    "learning_rate": 0.001,
+    "warmup_epochs": 0,
+    "training_time": 25.1268892288208,
+    "n_parameters": 349825,
+    "train_rmse": 77.558209616431,
+    "val_rmse": 20.391936021072155,
+    "test_rmse": 26.518418155403683,
+    "train_mae": 61.8377799987793,
+    "val_mae": 14.875389099121094,
+    "test_mae": 17.42487335205078,
+    "train_r2": -0.7698438167572021,
+    "val_r2": 0.8535690307617188,
+    "test_r2": 0.5927737951278687
+}

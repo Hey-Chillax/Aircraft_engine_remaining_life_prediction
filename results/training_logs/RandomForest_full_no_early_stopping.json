@@ -1,0 +1,19 @@
+{
+    "model": "RandomForest",
+    "data_version": "full",
+    "early_stopping": "no",
+    "window_size": 50,
+    "n_estimators": 200,
+    "max_depth": 20,
+    "training_time": 0.6325492858886719,
+    "train_rmse": 2.9264631003214565,
+    "val_rmse": 30.401477788765046,
+    "test_rmse": 26.693664134420956,
+    "train_mae": 1.5210855377654957,
+    "val_mae": 21.954334697340578,
+    "test_mae": 19.305859582455795,
+    "train_r2": 0.9982339769905685,
+    "val_r2": 0.7855654723670088,
+    "test_r2": 0.5873737629516023,
+    "n_features": 85
+}

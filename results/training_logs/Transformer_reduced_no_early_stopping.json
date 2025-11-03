@@ -1,0 +1,22 @@
+{
+    "model": "Transformer",
+    "data_version": "reduced",
+    "early_stopping": "no",
+    "sequence_length": 50,
+    "batch_size": 64,
+    "epochs": 300,
+    "best_epoch": 125,
+    "learning_rate": 0.0005,
+    "warmup_epochs": 20,
+    "training_time": 771.0535323619843,
+    "n_parameters": 803201,
+    "train_rmse": 83.45927267423615,
+    "val_rmse": 23.55923074965787,
+    "test_rmse": 21.727324493334926,
+    "train_mae": 65.6368179321289,
+    "val_mae": 16.06993865966797,
+    "test_mae": 15.790078163146973,
+    "train_r2": -1.0494086742401123,
+    "val_r2": 0.8045487999916077,
+    "test_r2": 0.7266286611557007
+}
