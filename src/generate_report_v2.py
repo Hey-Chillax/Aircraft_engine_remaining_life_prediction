@@ -88,18 +88,18 @@ def collect_round1_results():
                 
                 results.append({
                     'model_name': json_file.stem,
-                    'model_type': parts[0],
+                    'model_type': parts[0] if len(parts) > 0 else data['model'],
                     'model_size': 'base',  # 第一轮都是base大小
                     'data_version': data['data_version'],
                     'early_stopping': data['early_stopping'],
-                    'sequence_length': 50,  # 第一轮都是50
-                    'epochs': 300,  # 第一轮都是300
-                    'best_epoch': data['results']['best_epoch'],
-                    'training_time': data['results']['training_time'],
-                    'n_parameters': data['results']['n_parameters'],
-                    'test_rmse': data['results']['test_rmse'],
-                    'test_mae': data['results']['test_mae'],
-                    'test_r2': data['results']['test_r2']
+                    'sequence_length': data.get('sequence_length', 50),  # 第一轮都是50
+                    'epochs': data.get('epochs', 300),  # 第一轮都是300
+                    'best_epoch': data['best_epoch'],
+                    'training_time': data['training_time'],
+                    'n_parameters': data['n_parameters'],
+                    'test_rmse': data['test_rmse'],
+                    'test_mae': data['test_mae'],
+                    'test_r2': data['test_r2']
                 })
         except Exception as e:
             logger.error(f"读取文件失败 {json_file}: {str(e)}")

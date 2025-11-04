@@ -224,7 +224,7 @@ def plot_all_models_comparison():
             data = json.load(f)
             results.append({
                 'model_name': json_file.stem,
-                'model_type': data['model']['split('_')[0],
+                'model_type': data['model'].split('_')[0],
                 'model_size': data['model'].split('_')[1],
                 'data_version': data['data_version'],
                 'early_stopping': data['early_stopping'],
